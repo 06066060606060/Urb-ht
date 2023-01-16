@@ -163,12 +163,8 @@
         <select name="type"
           class=" px-4 h-[40px] text-sm bg-white border-gray-200 rounded-md transition border focus:border-white focus:outline-none focus:ring focus:ring-gray-400">
           <option value="">Popular</option>
-          <option value="Maison" {{ $urltype=='Maison' ? 'selected' : '' }}>Size</option>
-          <option value="Appartement" {{ $urltype=='Appartement' ? 'selected' : '' }}>Size</option>
-          <option value="Terrain" {{ $urltype=='Terrain' ? 'selected' : '' }}>Size</option>
-          <option value="" {{ $urltype=='Villa' ? 'selected' : '' }}>Size</option>
-          <option value="Bureau" {{ $urltype=='Bureau' ? 'selected' : '' }}>Size</option>
-          <option value="Commerce" {{ $urltype=='Commerce' ? 'selected' : '' }}>Size</option>
+          <option value="new" {{ $urltype=='new' ? 'selected' : '' }}>The Newest</option>
+          <option value="old" {{ $urltype=='old' ? 'selected' : '' }}>The Oldest</option>
         </select>
 
 
