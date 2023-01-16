@@ -170,8 +170,15 @@
           <option value="Bureau" {{ $urltype=='Bureau' ? 'selected' : '' }}>Size</option>
           <option value="Commerce" {{ $urltype=='Commerce' ? 'selected' : '' }}>Size</option>
         </select>
+
+        
       </div>
 
+      <div class="flex md:hidden md:py-0 pt-1">
+        <i class="mx-2 fa-solid fa-list fa-2x text-gray-200"></i>
+        <i class="fa-solid fa-border-all  fa-2x text-gray-200 mr-2"></i>
+        <i class="fa-solid fa-map fa-2x text-gray-200"></i>
+      </div>
 
       <fieldset class="flex gap-2 md:gap-4">
         <div>
@@ -211,7 +218,7 @@
         </div>
       </fieldset>
 
-      <div class="flex">
+      <div class="hidden md:flex py-4 md:py-0">
         <i class="mx-2 fa-solid fa-list fa-2x text-gray-200"></i>
         <i class="fa-solid fa-border-all  fa-2x text-gray-200 mr-2"></i>
         <i class="fa-solid fa-map fa-2x text-gray-200"></i>
