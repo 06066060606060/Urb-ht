@@ -23,13 +23,17 @@
   <meta property="twitter:image" content="./img/logo-sm.png">
 
   <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel='stylesheet' href='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css'>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+  <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+
 
 
 
@@ -69,6 +73,8 @@
     <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
       class="absolute inset-x-0 z-50 w-screen px-6 py-4 mt-12 transition-all duration-300 ease-in-out bg-gray-50 shadow-md lg:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
       <div class="flex flex-col pb-4 space-y-4 align-baseline lg:mt-0 lg:flex-row lg:space-y-0 md:pb-0">
+        <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./index.html"
+          @click="isOpen = false">&nbsp;HOME</a>
         <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./neighbourhoods.html"
           @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
         <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./masterplans.html"
@@ -305,7 +311,7 @@
     </div>
   </section>
 
-  <content class="block mx-4 md:mx-8 pb-16">
+  <section class="block mx-4 md:mx-8 pb-16">
     <div class="grid grid-cols-4 gap-4">
       <div class="bg-gray-50 hover:bg-gray-100 shadow-md">
         <a href="#" class="block">
@@ -404,9 +410,12 @@
         </a></div>
     </div>
 
-  </content>
-  <div class=" border-t mx-4">
-    <content class="block py-16 md:mx-auto max-w-7xl mx-4">
+  </section>
+
+
+
+  <section class=" border-t mx-4">
+    <div class="block py-16 md:mx-auto max-w-7xl mx-4">
       <div class="w-full">
         <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pb-4">Streetscapes</h1>
       </div>
@@ -459,17 +468,17 @@
           class="flex mx-auto mt-16 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg">See
           All</button>
       </a>
-    </content>
-  </div>
+    </div>
+  </section>
 
 
 
-  <div class=" border-t mx-4">
-    <section class="max-w-screen-xl py-8 md:py-16 md:mx-auto pb-16 mx-4 ">
+  <section class=" border-t mx-4">
+    <div class="max-w-screen-xl py-8 md:py-16 md:mx-auto pb-16 mx-4 ">
       <div class="flex flex-wrap w-full mb-8 md:mb-20">
         <div class="w-full">
           <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pb-4">Masterplans</h1>
-          <div class="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
+          <div class="max-w-xl mb-6 sm:mx-auto sm:text-center lg:max-w-2xl">
             <p class="text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
             </p>
@@ -477,8 +486,9 @@
         </div>
       </div>
       <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md "
-          style="background-image: url(./img/Layer2.png)">
+        <div
+          class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
+          style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg)">
           <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
           <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 
@@ -490,8 +500,9 @@
               mollitia magnam non voluptates</a>
           </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-          style="background-image: url(./img/Layer3.png);">
+        <div
+          class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+          style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
           <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
           <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <div class="flex flex-col justify-start text-center ">
@@ -502,8 +513,9 @@
               aliquam excepturi</a>
           </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-          style="background-image: url(./img/Layer4.png);">
+        <div
+          class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+          style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg);">
           <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
           <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <div class="flex flex-col justify-start text-center ">
@@ -514,8 +526,9 @@
               dignissimos commodi optio vero animi</a>
           </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-          style="background-image: url(./img/Layer5.png);">
+        <div
+          class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+          style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
           <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
           <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <div class="flex flex-col justify-start text-center ">
@@ -532,8 +545,8 @@
           class="flex mx-auto mt-16 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg">See
           All</button>
       </a>
-    </section>
-  </div>
+    </div>
+  </section>
 
 
 
@@ -542,7 +555,7 @@
       <div class="flex flex-wrap w-full mb-8 md:mb-20">
         <div class="w-full">
           <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pb-4">Neighbourhoods</h1>
-          <div class="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
+          <div class="max-w-xl mb-6 sm:mx-auto sm:text-center lg:max-w-2xl">
             <p class="text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
             </p>
@@ -658,13 +671,110 @@
 
   <section class="border-b pb-16 mx-4 mb-16">
     <div class="w-full">
-      <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center py-16">Search on the map</h1>
+      <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pt-16 pb-8">Search on the map</h1>
+      <div class="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
+        <p class="text-base text-gray-700 md:text-lg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+        </p>
+      </div>
     </div>
     <div class="flex md:mx-4">
       <div id="map" class="mx-2 mt-4 rounded h-[550px] w-screen">
       </div>
     </div>
   </section>
+
+
+  <section>
+    <div class="w-full">
+      <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pt-4 pb-8">TO READ</h1>
+      <div class="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
+        <p class="text-base text-gray-700 md:text-lg mx-8">
+          Rundown of a variety of printed/online planning magazines and books you might consider reading.
+        </p>
+      </div>
+    </div>
+  <div x-data="{swiper: null}"
+  x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+  
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+      },
+    })"
+  class="relative w-10/12 mx-auto flex flex-row"
+>
+  <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+    <button @click="swiper.slidePrev()" 
+            class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+
+  <div class="swiper-container" x-ref="container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide p-4">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[450px] w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+          </div>
+        </div>
+      </div>
+              
+      <div class="swiper-slide p-4">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[450px] w-full object-cover" src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide p-4">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[450px] w-full object-cover" src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide p-4">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[450px] w-full object-cover" src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+    <button @click="swiper.slideNext()" 
+            class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+</div>
+</section>
+
+
 
 
 
@@ -784,8 +894,10 @@
 
 
   </section>
-  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
-    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
   <script>
 
     let mymap = L.map('map').setView([48.6890, 11.14086], 5);
@@ -796,6 +908,11 @@
     mymap.touchZoom.enable();
     mymap.scrollWheelZoom.disable();
   </script>
+
+<script>
+
+
+</script>
 </body>
 
 

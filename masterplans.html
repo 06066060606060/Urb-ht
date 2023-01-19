@@ -65,14 +65,16 @@
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
             class="absolute inset-x-0 z-50 w-screen px-6 py-4 mt-12 transition-all duration-300 ease-in-out bg-gray-50 shadow-md lg:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
             <div class="flex flex-col pb-4 space-y-4 align-baseline lg:mt-0 lg:flex-row lg:space-y-0 md:pb-0">
+                <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./index.html"
+                @click="isOpen = false">&nbsp;HOME</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./neighbourhoods.html"
-                    @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
+                  @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./masterplans.html"
-                    @click="isOpen = false">&nbsp;MASTERPLANS</a>
+                  @click="isOpen = false">&nbsp;MASTERPLANS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./streetscapes.html"
-                    @click="isOpen = false">&nbsp;STREETSCAPES</a>
+                  @click="isOpen = false">&nbsp;STREETSCAPES</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./about.html"
-                    @click="isOpen = false">&nbsp;ABOUT</a>
+                  @click="isOpen = false">&nbsp;ABOUT</a>
 
 
 
@@ -161,8 +163,8 @@
     <div class=" border-t mx-4">
         <section class="max-w-screen-xl py-8 md:py-16 md:mx-auto pb-16 mx-4 ">
             <div class="grid grid-cols-1 gap-5 lg:grid-cols-5 sm:grid-cols-2">
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md "
-                    style="background-image: url(./img/Layer2.png)">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
+                    style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
                     <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                     <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 
@@ -175,8 +177,8 @@
                             mollitia magnam non voluptates</a>
                     </h2>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                    style="background-image: url(./img/Layer3.png);">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                    style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
                     <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                     <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                         <div class="flex flex-col justify-start text-center ">
@@ -188,8 +190,8 @@
                             aliquam excepturi</a>
                     </h2>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                    style="background-image: url(./img/Layer4.png);">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                    style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
                     <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                     <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                         <div class="flex flex-col justify-start text-center ">
@@ -201,8 +203,8 @@
                             dignissimos commodi optio vero animi</a>
                     </h2>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                    style="background-image: url(./img/Layer5.png);">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                    style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
                     <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                     <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                         <div class="flex flex-col justify-start text-center ">
@@ -214,8 +216,8 @@
                             necessitatibus architecto exercitat</a>
                     </h2>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                    style="background-image: url(./img/Layer5.png);">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                    style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
                     <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                     <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                         <div class="flex flex-col justify-start text-center ">
@@ -228,8 +230,8 @@
                     </h2>
                 </div>
 
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md "
-                style="background-image: url(./img/Layer2.png)">
+                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
+                style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
                 <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                 <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 
@@ -242,8 +244,7 @@
                         mollitia magnam non voluptates</a>
                 </h2>
             </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                style="background-image: url(./img/Layer3.png);">
+            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md" style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
                 <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                 <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                     <div class="flex flex-col justify-start text-center ">
@@ -255,8 +256,8 @@
                         aliquam excepturi</a>
                 </h2>
             </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                style="background-image: url(./img/Layer4.png);">
+            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
                 <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                 <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                     <div class="flex flex-col justify-start text-center ">
@@ -268,8 +269,8 @@
                         dignissimos commodi optio vero animi</a>
                 </h2>
             </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                style="background-image: url(./img/Layer5.png);">
+            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
                 <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                 <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                     <div class="flex flex-col justify-start text-center ">
@@ -281,8 +282,8 @@
                         necessitatibus architecto exercitat</a>
                 </h2>
             </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-                style="background-image: url(./img/Layer5.png);">
+            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+                style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
                 <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
                 <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                     <div class="flex flex-col justify-start text-center ">
@@ -295,8 +296,8 @@
                 </h2>
             </div>
 
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md "
-            style="background-image: url(./img/Layer2.png)">
+            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
+            style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 
@@ -309,8 +310,8 @@
                     mollitia magnam non voluptates</a>
             </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-            style="background-image: url(./img/Layer3.png);">
+        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+            style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <div class="flex flex-col justify-start text-center ">
@@ -322,8 +323,8 @@
                     aliquam excepturi</a>
             </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-            style="background-image: url(./img/Layer4.png);">
+        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+            style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <div class="flex flex-col justify-start text-center ">
@@ -335,8 +336,8 @@
                     dignissimos commodi optio vero animi</a>
             </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-            style="background-image: url(./img/Layer5.png);">
+        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+            style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <div class="flex flex-col justify-start text-center ">
@@ -348,8 +349,8 @@
                     necessitatibus architecto exercitat</a>
             </h2>
         </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border shadow-md"
-            style="background-image: url(./img/Layer5.png);">
+        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
+            style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <div class="flex flex-col justify-start text-center ">
