@@ -168,7 +168,7 @@
 
   <div class="border-b border-gray-300"></div>
 
-  <section class="bg-white mx-2 md:mx-8 pt-4 pb-8">
+  <section class="bg-white mx-2 md:mx-16 pt-4 pb-8">
     <div class="flex flex-wrap py-4 justify-between">
       <div class="pb-4 md:pb-0">
         <select name="type"
@@ -311,7 +311,7 @@
     </div>
   </section>
 
-  <section class="block mx-4 md:mx-8 pb-16">
+  <section class="block mx-4 md:mx-16 pb-16">
     <div class="grid grid-cols-4 gap-4">
       <div class="bg-gray-50 hover:bg-gray-100 shadow-md">
         <a href="#" class="block">
@@ -669,7 +669,7 @@
 
 
 
-  <section class="border-b pb-16 mx-4 mb-16">
+  <section class="border-b pb-16 mx-8 mb-16">
     <div class="w-full">
       <h1 class="text-3xl font-bold text-gray-900 md:text-5xl text-center pt-16 pb-8">Search on the map</h1>
       <div class="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
@@ -721,10 +721,10 @@
     })"
   class="relative w-10/12 mx-auto flex flex-row"
 >
-  <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+  <div class="absolute inset-y-0 left-0 z-10 flex items-center mb-16">
     <button @click="swiper.slidePrev()" 
-            class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            class="bg-black -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black">
+      <svg viewBox="0 0 20 20" fill="white" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
     </button>
   </div>
 
@@ -810,10 +810,10 @@
     </div>
   </div>
 
-  <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+  <div class="absolute inset-y-0 right-0 z-10 flex items-center mb-16">
     <button @click="swiper.slideNext()" 
-            class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            class="bg-black -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black">
+      <svg viewBox="0 0 20 20" fill="white" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
     </button>
   </div>
 </div>
