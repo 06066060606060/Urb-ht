@@ -30,7 +30,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
   <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 
@@ -331,7 +332,8 @@
             </p>
           </div>
         </a></div>
-      <div class="col-span-2 bg-gray-50 hover:bg-gray-100 transition hover:scale-[102%] shadow-md"> <a href="#" class="block">
+      <div class="col-span-2 bg-gray-50 hover:bg-gray-100 transition hover:scale-[102%] shadow-md"> <a href="#"
+          class="block">
           <img alt="Art" src="./img/LIME-STREET2.jpg" class="h-48 md:h-96 w-full object-cover md:object-fill " />
           <div class="p-2">
             <div class="flex justify-between">
@@ -379,7 +381,8 @@
             </p>
           </div>
         </a></div>
-      <div class="col-span-2 bg-gray-50 hover:bg-gray-100 shadow-md transition hover:scale-[102%]"> <a href="#" class="block">
+      <div class="col-span-2 bg-gray-50 hover:bg-gray-100 shadow-md transition hover:scale-[102%]"> <a href="#"
+          class="block">
           <img alt="Art" src="./img/za.jpg" class="h-48 md:h-96 w-full object-cover" />
           <div class="p-2">
             <h3 class="mt-4 md:text-xl font-bold text-gray-900">Lorem, ipsum dolor.</h3>
@@ -692,8 +695,7 @@
         </p>
       </div>
     </div>
-  <div x-data="{swiper: null}"
-  x-init="swiper = new Swiper($refs.container, {
+    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
       loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
@@ -716,106 +718,117 @@
           spaceBetween: 0,
         },
       },
-    })"
-  class="relative w-10/12 mx-auto flex flex-row"
->
-  <div class="absolute inset-y-0 left-0 z-10 flex items-center mb-16">
-    <button @click="swiper.slidePrev()" 
-            class="bg-black -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black border border-opacity-20">
-      <svg viewBox="0 0 20 20" fill="white" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-    </button>
-  </div>
-
-  <div class="swiper-container" x-ref="container">
-    <div class="swiper-wrapper pb-16">
-
-    
-      <div class="swiper-slide p-4">
-        <a href="">
-        <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
-          <div class="flex-shrink-0">
-            <img class="h-[450px] w-full object-cover" src="./img/kwartal-1170x1641.jpg" alt="">
-            <h1 class="text-black font-bold text-center mx-8 pt-2">KWARTAŁ</h1>
-            <p class="text-xs text-gray-700 mx-8 text-center pb-2">
-              Polish magazines
-            </p>
-          </div>
-        </div>
-      </a>
+    })" class="relative w-10/12 mx-auto flex flex-row">
+      <div class="absolute inset-y-0 left-0 z-10 flex items-center mb-4">
+        <button @click="swiper.slidePrev()"
+          class="bg-black -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black border border-opacity-20">
+          <svg viewBox="0 0 20 20" fill="white" class="chevron-left w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
 
-
-  
-      <div class="swiper-slide p-4">
-        <a href="">
-        <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
-          <div class="flex-shrink-0">
-            <img class="h-[450px] w-full object-cover" src="./img/metropolis-1170x1641.jpg" alt="">
-            <h1 class="text-black font-bold text-center mx-8 pt-2">METROPOLIS</h1>
-            <p class="text-xs text-gray-700 mx-8 text-center pb-2">
-              Polish magazines
-            </p>
-          </div>
-        </div>
-      </a>
-      </div>
-           
-      <div class="swiper-slide p-4">
-        <a href="">
-        <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
-          <div class="flex-shrink-0">
-            <img class="h-[450px] w-full object-cover" src="./img/paysage-topscape-1170x1641.jpg" alt="">
-            <h1 class="text-black font-bold text-center mx-8 pt-2">PAYSAGE TOPSCAPE</h1>
-            <p class="text-xs text-gray-700 mx-8 text-center pb-2">
-              magazines
-            </p>
-          </div>
-        </div>
-      </a>
-      </div>
-   
-      <div class="swiper-slide p-4">
-        <a href="">
-        <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
-          <div class="flex-shrink-0">
-            <img class="h-[450px] w-full object-cover" src="./img/riba-journal-1170x1641.jpg" alt="">
-            <h1 class="text-black font-bold text-center mx-8 pt-2">RIBA JOURNAL</h1>
-            <p class="text-xs text-gray-700 mx-8 text-center pb-2">
-              magazines
-            </p>
-          </div>
-        </div>
-      </a>
-      </div>
- 
-
-    
-      <div class="swiper-slide p-4">
-        <a href="">
-        <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
-          <div class="flex-shrink-0">
-            <img class="h-[450px] w-full object-cover" src="./img/paisea-1170x1641.jpg" alt="">
-            <h1 class="text-black font-bold text-center mx-8 pt-2">PAISEA</h1>
-            <p class="text-xs text-gray-700 mx-8 text-center pb-2">
-              magazines
-            </p>
-          </div>
-        </div>
-      </a>
-      </div>
+      <div class="swiper-container" x-ref="container">
+        <div class="swiper-wrapper">
 
 
+          <div class="swiper-slide p-4">
+            <a href="">
+              <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
+                <div class="flex-shrink-0">
+                  <img class="h-[450px] w-full object-cover" src="./img/kwartal-1170x1641.jpg" alt="">
+                  <h1 class="text-black font-bold text-center mx-8 pt-2">KWARTAŁ</h1>
+                  <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                    Polish magazines
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="swiper-slide p-4">
+            <a href="">
+              <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
+                <div class="flex-shrink-0">
+                  <img class="h-[450px] w-full object-cover" src="./img/metropolis-1170x1641.jpg" alt="">
+                  <h1 class="text-black font-bold text-center mx-8 pt-2">METROPOLIS</h1>
+                  <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                    Polish magazines
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide p-4">
+            <a href="">
+              <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
+                <div class="flex-shrink-0">
+                  <img class="h-[450px] w-full object-cover" src="./img/paysage-topscape-1170x1641.jpg" alt="">
+                  <h1 class="text-black font-bold text-center mx-8 pt-2">PAYSAGE TOPSCAPE</h1>
+                  <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                    magazines
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide p-4">
+            <a href="">
+              <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
+                <div class="flex-shrink-0">
+                  <img class="h-[450px] w-full object-cover" src="./img/riba-journal-1170x1641.jpg" alt="">
+                  <h1 class="text-black font-bold text-center mx-8 pt-2">RIBA JOURNAL</h1>
+                  <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                    magazines
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="swiper-slide p-4">
+            <a href="">
+              <div class="flex flex-col shadow-lg overflow-hidden  hover:scale-110 transition">
+                <div class="flex-shrink-0">
+                  <img class="h-[450px] w-full object-cover" src="./img/paisea-1170x1641.jpg" alt="">
+                  <h1 class="text-black font-bold text-center mx-8 pt-2">PAISEA</h1>
+                  <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                    magazines
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="absolute inset-y-0 right-0 z-10 flex items-center mb-4">
+        <button @click="swiper.slideNext()"
+          class="bg-black -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black border border-opacity-20">
+          <svg viewBox="0 0 20 20" fill="white" class="chevron-right w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="absolute inset-y-0 right-0 z-10 flex items-center mb-16">
-    <button @click="swiper.slideNext()" 
-            class="bg-black -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none hover:bg-gray-800 transition active:bg-black border border-opacity-20">
-      <svg viewBox="0 0 20 20" fill="white" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-    </button>
-  </div>
-</div>
-</section>
+    <a href="./read.html">
+      <button
+        class="flex mx-auto my-8 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg">See
+        All to Read</button>
+    </a>
+  </section>
 
 
 
@@ -939,8 +952,9 @@
   </section>
 
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
   <script>
 
     let mymap = L.map('map').setView([48.6890, 11.14086], 5);
@@ -952,10 +966,10 @@
     mymap.scrollWheelZoom.disable();
   </script>
 
-<script>
+  <script>
 
 
-</script>
+  </script>
 </body>
 
 
