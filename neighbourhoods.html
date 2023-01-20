@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Urbanitarian">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <link rel="shortcut icon" href="./img/logo-sm.png" type="image/x-icon" />
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="Urbanitarian">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="./img/logo-sm.png">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="#">
-  <meta property="twitter:title" content="Urbanitarian">
-  <meta property="twitter:description" content="">
-  <meta property="twitter:image" content="./img/logo-sm.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Urbanitarian">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="./img/logo-sm.png" type="image/x-icon" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Urbanitarian">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/logo-sm.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Urbanitarian">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="./img/logo-sm.png">
 
-  <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
-  <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 
 
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Urbanitarian</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Urbanitarian</title>
 </head>
 
 
@@ -72,15 +73,15 @@
             class="absolute inset-x-0 z-50 w-screen px-6 py-4 mt-12 transition-all duration-300 ease-in-out bg-gray-50 shadow-md lg:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
             <div class="flex flex-col pb-4 space-y-4 align-baseline lg:mt-0 lg:flex-row lg:space-y-0 md:pb-0">
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./index.html"
-                @click="isOpen = false">&nbsp;HOME</a>
+                    @click="isOpen = false">&nbsp;HOME</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./neighbourhoods.html"
-                  @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
+                    @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./masterplans.html"
-                  @click="isOpen = false">&nbsp;MASTERPLANS</a>
+                    @click="isOpen = false">&nbsp;MASTERPLANS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./streetscapes.html"
-                  @click="isOpen = false">&nbsp;STREETSCAPES</a>
+                    @click="isOpen = false">&nbsp;STREETSCAPES</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./about.html"
-                  @click="isOpen = false">&nbsp;ABOUT</a>
+                    @click="isOpen = false">&nbsp;ABOUT</a>
 
             </div>
 
@@ -114,6 +115,65 @@
 
 
             </div>
+
+            <fieldset class="flex justify-center flex-wrap gap-2 md:gap-4 pt-8 mx-auto">
+                <div>
+                    <input type="radio" name="ColorOption0" value="All0" id="All0" class="peer hidden" checked />
+
+                    <label for="All0"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">All</p>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="ColorOption0" value="child" id="child" class="peer hidden" />
+
+                    <label for="child"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">Child-friendly</p>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="ColorOption0" value="green" id="green" class="peer hidden" />
+
+                    <label for="green"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">Green</p>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="ColorOption0" value="climate" id="climate" class="peer hidden" />
+
+                    <label for="climate"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">Climate-proof</p>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="ColorOption0" value="age" id="age" class="peer hidden" />
+
+                    <label for="age"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">Age-friendly</p>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="ColorOption0" value="placemaking" id="placemaking" class="peer hidden" />
+
+                    <label for="placemaking"
+                        class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 py-2 px-3 text-gray-900 hover:border-gray-200 peer-checked:border-gray-500 peer-checked:bg-gray-500 peer-checked:text-white">
+                        <p class="text-sm font-medium">Placemaking</p>
+                    </label>
+                </div>
+            </fieldset>
+
+
+
 
             <fieldset class="flex justify-center flex-wrap gap-2 md:gap-4 pt-8 mx-auto">
                 <div>
@@ -161,6 +221,87 @@
                     </label>
                 </div>
             </fieldset>
+            <section>
+                <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+                    <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+                        <li>
+                            <a href="#" class="block overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                    alt=""
+                                    class="h-[400px] w-full object-cover transition duration-500 group-hover:scale-105" />
+
+                                <div class="relative pt-3 bg-white">
+                                    <span class="tracking-wider text-gray-900 mx-1 font-bold text-base"> Strandlodsvej </span>
+                                    <p class="mt-2">
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">   </span>
+
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                    alt=""
+                                    class="h-[400px] w-full object-cover transition duration-500 group-hover:scale-105" />
+
+                                <div class="relative pt-3 bg-white">
+
+
+                                    <span class="tracking-wider text-gray-900 mx-1 font-bold text-base"> Vanlose Torv </span>
+                                    <p class="mt-2 flex">
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold"> Child-friendly </span>
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">  Green </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                    alt=""
+                                    class="h-[400px] w-full object-cover transition duration-500 group-hover:scale-105" />
+
+                                <div class="relative pt-3 bg-white">
+
+
+                                    <span class="tracking-wider text-gray-900 mx-1 font-bold text-base"> Grondalen </span>
+                                    <p class="mt-2 flex">
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">  Climate-proof</span>
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold"> Child-friendly </span>
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">  Green </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                    alt=""
+                                    class="h-[400px] w-full object-cover transition duration-500 group-hover:scale-105" />
+
+                                <div class="relative pt-3 bg-white">
+
+
+                                    <span class="tracking-wider text-gray-900 mx-1 font-bold text-base"> Stradlodsvej </span>
+                                    <p class="mt-2 flex">
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">  Age-friendly</span>
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold"> Child-friendly </span>
+                                        <span class="text-xs mx-2 text-gray-500 font-semibold">  Placemaking </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
     </section>
 
 
@@ -192,7 +333,7 @@
             <nav aria-label="Footer Nav" class="mt-12">
                 <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                     <li>
-                        <a class="text-gray-700 transition hover:text-gray-700/75" href="./index.html">
+                        <a class="text-gray-700 transition hover:text-gray-700/75" href="./about.html">
                             About
                         </a>
                     </li>
@@ -294,7 +435,8 @@
 
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-      <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+        integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
 </body>
 
 </html>
