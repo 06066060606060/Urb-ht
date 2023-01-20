@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Urbanitarian">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <link rel="shortcut icon" href="./img/logo-sm.png" type="image/x-icon" />
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="Urbanitarian">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="./img/logo-sm.png">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="#">
-  <meta property="twitter:title" content="Urbanitarian">
-  <meta property="twitter:description" content="">
-  <meta property="twitter:image" content="./img/logo-sm.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Urbanitarian">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="./img/logo-sm.png" type="image/x-icon" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Urbanitarian">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/logo-sm.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Urbanitarian">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="./img/logo-sm.png">
 
-  <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
-  <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <link rel='stylesheet' href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 
 
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Urbanitarian</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Urbanitarian</title>
 </head>
 
 
@@ -72,15 +73,15 @@
             class="absolute inset-x-0 z-50 w-screen px-6 py-4 mt-12 transition-all duration-300 ease-in-out bg-gray-50 shadow-md lg:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
             <div class="flex flex-col pb-4 space-y-4 align-baseline lg:mt-0 lg:flex-row lg:space-y-0 md:pb-0">
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./index.html"
-                @click="isOpen = false">&nbsp;HOME</a>
+                    @click="isOpen = false">&nbsp;HOME</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./neighbourhoods.html"
-                  @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
+                    @click="isOpen = false">&nbsp;NEIGHBOURHOODS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./masterplans.html"
-                  @click="isOpen = false">&nbsp;MASTERPLANS</a>
+                    @click="isOpen = false">&nbsp;MASTERPLANS</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./streetscapes.html"
-                  @click="isOpen = false">&nbsp;STREETSCAPES</a>
+                    @click="isOpen = false">&nbsp;STREETSCAPES</a>
                 <a class="text-sm font-semibold text-gray-400 lg:mx-4 hover:text-black" href="./about.html"
-                  @click="isOpen = false">&nbsp;ABOUT</a>
+                    @click="isOpen = false">&nbsp;ABOUT</a>
 
 
 
@@ -166,224 +167,204 @@
             </fieldset>
     </section>
 
-    <div class=" border-t mx-4 md:mx-16">
-        <section class="max-w-screen-xl py-8 md:py-16 md:mx-auto pb-16 mx-4 ">
-            <div class="grid grid-cols-1 gap-5 lg:grid-cols-5 sm:grid-cols-2">
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
-                    style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
-                    <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                    <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-
-                        <div class="flex flex-col justify-start text-center ">
+    <div class="border-t mx-4">
+        <section class="max-w-screen-2xl md:py-16 md:mx-auto pb-16">
+            <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+                
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KROYER PLADS | VLA+COBE |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                        <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline "> Autem sunt
-                            tempora
-                            mollitia magnam non voluptates</a>
-                    </h2>
+                    </a>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                    style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
-                    <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                    <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                        <div class="flex flex-col justify-start text-center ">
+
+
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KROYER PLADS | VLA+COBE |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                        <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Inventore
-                            reiciendis
-                            aliquam excepturi</a>
-                    </h2>
+                    </a>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                    style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
-                    <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                    <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                        <div class="flex flex-col justify-start text-center ">
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KARTOFFELRAEKKERNE | OSTERBRO |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                        <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Officiis
-                            mollitia
-                            dignissimos commodi optio vero animi</a>
-                    </h2>
+                    </a>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                    style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-                    <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                    <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                        <div class="flex flex-col justify-start text-center ">
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">LIME TREE SQUARE | FCB | STREET
+                                    SOMERSET</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, xs
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                        <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                            illo
-                            necessitatibus architecto exercitat</a>
-                    </h2>
+                    </a>
                 </div>
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                    style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-                    <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                    <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                        <div class="flex flex-col justify-start text-center ">
+
+
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_Kartoffelraekkerne-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">LIME TREE SQUARE | FCB | STREET
+                                    SOMERSET</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, xs
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                        <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                            illo
-                            necessitatibus architecto exercitat</a>
-                    </h2>
+                    </a>
                 </div>
 
-                <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
-                style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
-                <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KROYER PLADS | VLA+COBE |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="flex flex-col justify-start text-center ">
-                    </div>
-                </div>
-                <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                    <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline "> Autem sunt
-                        tempora
-                        mollitia magnam non voluptates</a>
-                </h2>
-            </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md" style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
-                <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                    <div class="flex flex-col justify-start text-center ">
-                    </div>
-                </div>
-                <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                    <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Inventore
-                        reiciendis
-                        aliquam excepturi</a>
-                </h2>
-            </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
-                <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                    <div class="flex flex-col justify-start text-center ">
-                    </div>
-                </div>
-                <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                    <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Officiis
-                        mollitia
-                        dignissimos commodi optio vero animi</a>
-                </h2>
-            </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-                <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                    <div class="flex flex-col justify-start text-center ">
-                    </div>
-                </div>
-                <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                    <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                        illo
-                        necessitatibus architecto exercitat</a>
-                </h2>
-            </div>
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-                style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-                <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-                <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                    <div class="flex flex-col justify-start text-center ">
-                    </div>
-                </div>
-                <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                    <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                        illo
-                        necessitatibus architecto exercitat</a>
-                </h2>
-            </div>
 
-            <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md "
-            style="background-image: url(./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg)">
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-            <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 
-                <div class="flex flex-col justify-start text-center ">
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KROYER PLADS | VLA+COBE |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline "> Autem sunt
-                    tempora
-                    mollitia magnam non voluptates</a>
-            </h2>
-        </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-            style="background-image: url(./img/S_Kartoffelraekkerne-scaled.jpg);">
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-            <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <div class="flex flex-col justify-start text-center ">
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">KARTOFFELRAEKKERNE | OSTERBRO |
+                                    COPENHAGEN</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, small
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Inventore
-                    reiciendis
-                    aliquam excepturi</a>
-            </h2>
-        </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-            style="background-image: url(./img/S_FCB-STUDIOS_Lime-Tree-Square-scaled.jpg);">
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-            <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <div class="flex flex-col justify-start text-center ">
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_HOLSCHER-NORDBERG_Strandlodsvej_web.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">LIME TREE SQUARE | FCB | STREET
+                                    SOMERSET</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, xs
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Officiis
-                    mollitia
-                    dignissimos commodi optio vero animi</a>
-            </h2>
-        </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-            style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-            <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <div class="flex flex-col justify-start text-center ">
+
+
+
+                <div class="">
+                    <a href="./masterplans_post.html">
+                        <div class="flex flex-col shadow-lg overflow-hidden border md:hover:scale-110 transition">
+                            <div class="flex-shrink-0">
+                                <img class="h-auto w-full object-cover border-b"
+                                    src="./img/S_Kartoffelraekkerne-scaled.jpg" alt="">
+                                <h1 class="text-sm font-bold text-center mx-8 pt-2">LIME TREE SQUARE | FCB | STREET
+                                    SOMERSET</h1>
+                                <p class="text-xs text-gray-700 mx-8 text-center pb-2">
+                                    Masterplans, xs
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                    illo
-                    necessitatibus architecto exercitat</a>
-            </h2>
-        </div>
-        <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 border  transition hover:scale-110 shadow-md"
-            style="background-image: url(./img/M_DOUBLE-DUTCH_Stadstuin-1-1-scaled.jpg);">
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b"></div>
-            <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <div class="flex flex-col justify-start text-center ">
-                </div>
-            </div>
-            <h2 class="z-10 p-5 bg-white bg-opacity-70">
-                <a rel="noopener noreferrer" href="./masterplans_post.html" class="font-medium text-md hover:underline ">Doloribus sit
-                    illo
-                    necessitatibus architecto exercitat</a>
-            </h2>
-        </div>
 
             </div>
-            <nav role="Page navigation" aria-label="{{ __('Pagination Navigation') }}" class="flex items-center justify-center ">
+            <nav role="Page navigation" aria-label="{{ __('Pagination Navigation') }}"
+                class="flex items-center justify-center ">
                 <div class="pt-16 justify-center  sm:flex-1 sm:flex sm:items-center">
                     <div>
                         <span class="relative z-0 inline-flex justify-center space-x-1 text-white rounded-md shadow-sm">
-         
-                                <button class="flex items-center justify-center w-10 h-10 duration-150 bg-black  rounded-md shadow-md  hover:bg-gray-600 focus:shadow-outline">
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                                </button>
-                           
 
-                                <button class="flex items-center justify-center w-10 h-10 duration-150 bg-black  rounded-md shadow-md  hover:bg-gray-600 focus:shadow-outline">
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                                </button>
-              
+                            <button
+                                class="flex items-center justify-center w-10 h-10 duration-150 bg-black  rounded-md shadow-md  hover:bg-gray-600 focus:shadow-outline">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
+
+                            <button
+                                class="flex items-center justify-center w-10 h-10 duration-150 bg-black  rounded-md shadow-md  hover:bg-gray-600 focus:shadow-outline">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd" fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
                         </span>
                     </div>
                 </div>
@@ -519,7 +500,8 @@
 
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-      <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+        integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
 </body>
 
 </html>
